@@ -16,7 +16,6 @@
     "start": "npm run lint && npm run bundle && npm run build"
   },
   "dependencies": {
-    "openapi": "^1.0.1",
     "@redocly/cli": "^1.0.0-beta.102"
   },
   "devDependencies": {

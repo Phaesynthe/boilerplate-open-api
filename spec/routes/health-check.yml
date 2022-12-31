@@ -1,0 +1,23 @@
+summary: Health Check
+description: Verifies that the API service is running
+operationId: healthCheck
+security:
+  - basicAuth: [ ]
+tags:
+  - system
+responses:
+  200:
+    description: Ok Response
+    content:
+      application/json:
+        schema:
+          $ref: '../schemas/health-check.yml'
+
+  400:
+    description: some failure
+  default:
+    description: unexpected error
+    content:
+      application/json:
+        schema:
+          $ref: '../schemas/error.yml'

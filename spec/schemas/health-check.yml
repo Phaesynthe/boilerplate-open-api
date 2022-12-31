@@ -1,0 +1,8 @@
+type: object
+properties:
+  ok:
+    type: boolean
+    description: indicates if the service is healthy or not
+  version:
+    type: string
+    description: The service's version as read from ./src/api/package.json
